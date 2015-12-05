@@ -39,7 +39,6 @@ clinical:overlays
 clinical:keybindings
 
 photonic:glass-ui
-photonic:no-select-everything
 
 
 # other packages used by clinical framework which need to be cleaned up
