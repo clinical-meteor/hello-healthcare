@@ -39,7 +39,7 @@ clinical:overlays
 clinical:keybindings
 
 photonic:glass-ui
-
+anti:gagarin
 
 # other packages used by clinical framework which need to be cleaned up
 awatson1978:fonts-helveticas
