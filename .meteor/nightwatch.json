@@ -14,7 +14,12 @@
     "./tests/nightwatch/commands/api/meteor",
     "./tests/nightwatch/commands/actions",
     "./tests/nightwatch/commands/components",
-    "./tests/nightwatch/commands/methods"
+    "./tests/nightwatch/commands/methods",
+    "packages/clinical-active-entry/components/entrySignIn/.tests",
+    "packages/clinical-active-entry/components/entrySignIn/.tests/actions",
+    "packages/clinical-active-entry/components/entrySignUp/.tests",
+    "packages/clinical-active-entry/components/entrySignUp/.tests/actions",
+    "packages/clinical-active-entry/components/forgotPassword/.tests"
   ],
   "custom_assertions_path": [
     "./tests/nightwatch/assertions"
@@ -32,7 +37,6 @@
   },
   "test_settings": {
     "default": {
-      "test_runner" : "mocha",
       "launch_url": "http://localhost:5000",
       "selenium_host": "127.0.0.1",
       "selenium_port": 4444,
