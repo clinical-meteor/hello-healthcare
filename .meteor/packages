@@ -31,12 +31,13 @@ autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 
 # clinical framework packages
+clinical:env@3.1.9
 clinical:router
 clinical:extended-api
-clinical:active-layout@0.2.0
+clinical:active-layout@0.3.8
 clinical:active-entry
-clinical:overlays
-clinical:keybindings
+#clinical:overlays
+#clinical:keybindings
 
 photonic:glass-ui
 anti:gagarin
