@@ -14,10 +14,13 @@ git clone http://github.com/clinical-meteor/hello-healthcare
 #### Testing
 
 ````bash
-npm install starrynight
+sudo npm install -g gagarin
 
-# run integration tests
-starrynight run-tests --framework gagarin --webdriver http://localhost:9515
+# run integration/verification tests
+# starrynight run-tests --framework gagarin --webdriver http://localhost:9515 ./packages/*/tests/gagarin/**/*.js
+
+# run acceptance/validation tests
+# starrynight run-tests --framework nightwatch
 ````
 
 
