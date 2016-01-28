@@ -8,11 +8,12 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom('1.1.0.3');
+
   api.use('clinical:theming@0.4.5');
   api.addFiles('default-theme.js');
 });
 
 Package.onTest(function (api) {
   api.use('tinytest');
-  api.use('default-theme');
+  api.use('clinical:default-theme');
 });
