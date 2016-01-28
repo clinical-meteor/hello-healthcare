@@ -34,19 +34,19 @@ accounts-base
 accounts-password
 
 # clinical framework packages
-# clinical:env@3.1.9
-# clinical:overlays
-# clinical:keybindings
-clinical:env
+
+#clinical:env
 clinical:router
 clinical:extended-api
-clinical:active-layout@0.3.8
+clinical:active-layout
+clinical:active-layout-reset
+clinical:active-layout-pagescreen-config
+clinical:theming
+clinical:fonts
 clinical:active-entry
+clinical:default-theme
 
-photonic:glass-ui
 anti:gagarin@=0.4.11
 
 # other packages used by clinical framework which need to be cleaned up
-awatson1978:fonts-helveticas
-fortawesome:fontawesome
 grove:less
