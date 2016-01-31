@@ -1,8 +1,8 @@
 
-// Router.route('/', {
-//   name: 'homeRoute',
-//   template: 'homePage'
-// });
+Router.route('/', {
+  name: 'homeRoute',
+  template: 'homePage'
+});
 
 
 // counter starts at 0

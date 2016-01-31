@@ -48,6 +48,9 @@ clinical:active-layout
 clinical:active-layout-reset
 clinical:active-layout-pagescreen-config
 
+clinical:homepage
+clinical:glass-ui
+
 anti:gagarin@=0.4.11
 
 # other packages used by clinical framework which need to be cleaned up
