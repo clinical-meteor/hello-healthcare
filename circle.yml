@@ -34,7 +34,7 @@ dependencies:
     - sudo ln -s $HOME/.meteor/meteor /usr/bin/meteor
 
   override:
-    - clone http://github.com/awatson1978/accounts-housemd packages/accounts-housemd
+    - git clone http://github.com/awatson1978/accounts-housemd packages/accounts-housemd
     - meteor add anti:gagarin@0.4.11 clinical:accounts-housemd
     - starrynight autoconfig
 
