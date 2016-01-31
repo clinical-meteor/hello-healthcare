@@ -19,8 +19,8 @@ checkout:
    #- git submodule sync
    #- git submodule update --init --recursive # use submodules
 
-general:
-  build_dir: webapp
+#general:
+#  build_dir: webapp
 
 ## Customize dependencies
 dependencies:
