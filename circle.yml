@@ -38,8 +38,6 @@ dependencies:
     - if [ ! -e ${HOME}/.meteor/meteor ]; then curl https://install.meteor.com | /bin/sh; else echo "Meteor seems to be cached"; fi;
     # Link the meteor executable into /usr/bin
     - sudo ln -s $HOME/.meteor/meteor /usr/bin/meteor
-    # Check if the helloworld directory already exists, if it doesn't, create the helloworld app
-    - if [ ! -e ${HOME}/helloworld ]; then meteor create --release METEOR@1.1.0.3 helloworld; else echo "helloworld app seems to be cached"; fi;
 
   override:
     #- clone http://github.com/awatson1978/accounts-housemd packages/accounts-housemd
