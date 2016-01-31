@@ -1,7 +1,12 @@
 
 Router.route('/', {
   name: 'homeRoute',
-  template: 'homePage'
+  template: 'homePage',
+  yieldTemplates: {
+    'sidebar': {
+      to: "westPanel"
+    }
+  }
 });
 
 

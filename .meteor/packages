@@ -41,6 +41,7 @@ insecure                # Allow all DB writes from clients (for prototyping)
 clinical:active-entry
 
 clinical:theming
+clinical:theming-ui
 clinical:default-theme
 clinical:router
 clinical:router-default-config
@@ -48,8 +49,11 @@ clinical:active-layout
 clinical:active-layout-reset
 clinical:active-layout-pagescreen-config
 
+clinical:sidebar
 clinical:homepage
 clinical:glass-ui
+
+clinical:accounts-housemd
 
 anti:gagarin@=0.4.11
 

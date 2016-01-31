@@ -1,25 +1,29 @@
 {
   "starrynight": {
-    "version": "3.2.65"
+    "version": "3.7.0"
   },
   "nightwatch": {
-    "version": "0.7.6"
+    "version": "0.8.6"
   },
   "src_folders": [
     "./tests/nightwatch/walkthroughs"
   ],
   "output_folder": "./tests/nightwatch/reports",
   "custom_commands_path": [
-    "./tests/nightwatch/commands",
-    "./tests/nightwatch/commands/api/meteor",
-    "./tests/nightwatch/commands/actions",
-    "./tests/nightwatch/commands/components",
-    "./tests/nightwatch/commands/methods",
-    "packages/clinical-active-entry/components/entrySignIn/.tests",
-    "packages/clinical-active-entry/components/entrySignIn/.tests/actions",
-    "packages/clinical-active-entry/components/entrySignUp/.tests",
-    "packages/clinical-active-entry/components/entrySignUp/.tests/actions",
-    "packages/clinical-active-entry/components/forgotPassword/.tests"
+    ".gagarin/local/bundle/programs/server/npm/mongo/node_modules/mongodb/lib/mongodb/commands",
+    "packages/active-entry/components/entrySignIn/.tests",
+    "packages/active-entry/components/entrySignIn/.tests/actions",
+    "packages/active-entry/components/entrySignUp/.tests",
+    "packages/active-entry/components/entrySignUp/.tests/actions",
+    "packages/active-entry/components/forgotPassword/.tests",
+    "packages/active-entry/tests/nightwatch/commands",
+    "packages/active-users/client/components/userEditPage/.tests",
+    "packages/active-users/client/components/userImageGridPage/.tests",
+    "packages/active-users/client/components/userPreviewPage/.tests",
+    "packages/active-users/client/components/usersListPage/.tests",
+    "packages/active-users/client/components/usersTablePage/.tests",
+    "packages/active-users/tests/nightwatch/commands",
+    "tests/nightwatch/commands"
   ],
   "custom_assertions_path": [
     "./tests/nightwatch/assertions"
@@ -97,6 +101,36 @@
         "acceptSslCerts": true,
         "rotatable": true,
         "nativeEvents": true
+      }
+    },
+    "travischrome": {
+      "launch_url": "http://localhost:3000",
+      "selenium_host": "127.0.0.1",
+      "selenium_port": 4444,
+      "pathname": "/wd/hub",
+      "silent": true,
+      "disable_colors": false,
+      "firefox_profile": false,
+      "screenshots": {
+        "enabled": false,
+        "path": "./tests/nightwatch/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "databaseEnabled": true,
+        "locationContextEnabled": true,
+        "applicationCacheEnabled": true,
+        "browserConnectionEnabled": true,
+        "webStorageEnabled": true,
+        "acceptSslCerts": true,
+        "rotatable": true,
+        "nativeEvents": true,
+        "chromeOptions": {
+          "args": [
+            "--no-sandbox"
+          ]
+        }
       }
     },
     "unittests": {
