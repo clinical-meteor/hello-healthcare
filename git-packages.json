@@ -8,6 +8,9 @@
   "clinical:active-layout-pagescreen-config": {
     "git": "https://github.com/clinical-meteor/active-layout-pagescreen-config.git"
   },
+  "clinical:active-users": {
+    "git": "https://github.com/clinical-meteor/active-users.git"
+  },
   "clinical:error-pages": {
     "git": "https://github.com/clinical-meteor/error-pages.git"
   },
