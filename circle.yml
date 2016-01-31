@@ -35,7 +35,7 @@ dependencies:
 
   override:
     - git clone http://github.com/awatson1978/accounts-housemd packages/accounts-housemd
-    - meteor add anti:gagarin@0.4.11 clinical:accounts-housemd
+    - meteor add anti:gagarin@0.4.11 clinical:accounts-housemd clinical:active-users
     - starrynight autoconfig
 
 ## Customize test commands
