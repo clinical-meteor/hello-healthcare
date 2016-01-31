@@ -39,9 +39,10 @@ dependencies:
     #- git clone http://github.com/clinical-meteor/active-users packages/active-users
     - starrynight fetch
     - cd packages && ls -la
+    - cd packages/active-users/tests/nightwatch/commands
     - meteor add anti:gagarin@0.4.11 clinical:accounts-housemd clinical:active-users
     - starrynight autoconfig
-    - echo .meteor/nightwatch.json
+    - cat .meteor/nightwatch.json
 
 ## Customize test commands
 test:
