@@ -41,6 +41,7 @@ dependencies:
     - cd packages && ls -la
     - meteor add anti:gagarin@0.4.11 clinical:accounts-housemd clinical:active-users
     - starrynight autoconfig
+    - echo .meteor/nightwatch.json
 
 ## Customize test commands
 test:
