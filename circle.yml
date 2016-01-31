@@ -19,13 +19,13 @@ machine:
 dependencies:
   cache_directories:
     - ~/.meteor # relative to the user's home directory
-    #- ~/nvm/v0.10.33/lib/node_modules/starrynight
-    #- ~/nvm/v0.10.33/bin/starrynight
+    - ~/nvm/v0.10.33/lib/node_modules/starrynight
+    - ~/nvm/v0.10.33/bin/starrynight
 
   pre:
     # Install Starrynight unless it is cached
-    #- if [ ! -e ~/nvm/v0.10.33/bin/starrynight ]; then npm install -g starrynight; else echo "Starrynight seems to be cached"; fi;
-    - npm install -g starrynight;
+    - if [ ! -e ~/nvm/v0.10.33/bin/starrynight ]; then npm install -g starrynight; else echo "Starrynight seems to be cached"; fi;
+    #- npm install -g starrynight;
 
     # Install  Meteor
     - mkdir -p ${HOME}/.meteor
