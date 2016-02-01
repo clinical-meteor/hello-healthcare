@@ -16,11 +16,16 @@ git clone http://github.com/clinical-meteor/hello-healthcare
 #### Testing
 
 ````bash
+# install starrynight
 sudo npm install -g starrynight
 
+# run the validation tests
+starrynight fetch
 starrynight autoconfig
 starrynight run-tests --type validation
-starrynight run-tests --type verification
+
+# run the verification tests
+starrynight run-tests --type package-verification
 ````
 
 
