@@ -3,22 +3,22 @@
 
     <div id="sidebarMenuContents" class="sidebarMenuContents">
 
-        <div id="usernameLink" class="sidebarMenuItem withLowerBorder">{{getUsername}}</div>
 
         {{#if currentUser}}
-          <div class="withLowerBorder">
-
-            <a id="aboutButton" href="{{pathFor 'aboutPage'}}">About</a>
-            <a id="featuresButton" href="{{pathFor 'marketingPage'}}">Features</a>
-
-          </div>
+          <div id="usernameLink" class="sidebarMenuItem">{{getUsername}}</div>
+          <a id="logoutButton" class="withLowerBorder">Logout</a>
+          <a href="/audit" class="withLowerBorder">HIPAA Audit Log</a>
+        {{else}}
+          <div id="usernameLink" class="sidebarMenuItem withLowerBorder">{{getUsername}}</div>
         {{/if}}
 
-        <a id="privacyButton" href="http://github.com/clinical-meteor/hello-healthcare" class="withLowerBorder">Get the Source Code</a>
-        <a id="eulaButton" href="http://clinical.meteor.com">Clinical Meteor</a>
-        <a id="eulaButton" href="http://www.meteor.com">Meteor</a>
+        <a href="/">Home</a>
+        <a href="/theming">Theming</a>
+        <a href="/blank" class="withLowerBorder">Blank Page</a>
+        <a href="http://github.com/clinical-meteor/hello-healthcare" >Get the Source Code</a>
+        <a href="http://clinical.meteor.com">Clinical Meteor</a>
+        <a href="http://www.meteor.com">Meteor</a>
         {{#if currentUser}}
-          <a id="logoutButton" class="withLowerBorder">Logout</a>
         {{/if}}
 
         <div id="connectionStatusPanel" class="centered">
