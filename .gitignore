@@ -8,3 +8,5 @@ logs/*
 reports/*
 
 .env
+.gagarin
+.meteor/local

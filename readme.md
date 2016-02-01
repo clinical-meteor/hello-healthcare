@@ -1,6 +1,6 @@
 ## hello-healthcare
 
-Hello World for the Clinical Meteor distro.
+Hello World for the Clinical Meteor release track.
 
 ================================
 #### Installation
@@ -9,7 +9,20 @@ Hello World for the Clinical Meteor distro.
 git clone http://github.com/clinical-meteor/hello-healthcare
 ````
 
+
 ================================
+#### Testing
+
+````bash
+sudo npm install -g starrynight
+
+starrynight autoconfig
+starrynight run-tests --type validation
+starrynight run-tests --type verification
+````
+
+
+===============================
 #### Licensing  
 
-MIT.  Use as you will.
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
