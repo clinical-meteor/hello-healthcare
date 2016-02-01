@@ -1,4 +1,11 @@
-# this travis.yml file is for the leaderboard-nightwatch example, when run standalone
+# This .travis.yml file is provided so that you don't have to just rely on CircleCI
+# However, we do find that CircleCI works considerably better than Travis, and have discontinued
+# development of this file.  So, if you're fine using CircleCI, feel free to delete this file.
+# Otherwise, most any PRs that manage this file will be accepted, as we're not actively using it
+# within the Clinical Meteor QA infrastructure anymore.  It's provided for your convenience, so do
+# what you will.
+
+
 language: node_js
 
 node_js:
@@ -29,12 +36,6 @@ cache:
     #- ~/.meteor/local/build/programs/server/assets/packages
 
 before_install:
-  # - set CONFIG_PREFIX=`npm config get prefix`
-
-  # - "wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb"
-  # - "sudo apt-get update -qq"
-  # - "sudo dpkg -i ./google-chrome*.deb"
-  # - "sudo apt-get -f install"
 
   # set up the node_modules dir, so we know where it is
   - "mkdir -p node_modules &"
@@ -66,14 +67,8 @@ before_install:
   - "sleep 90"
   - "ls -la ~/.meteor/packages"
 
-  # check that node_modules exist, and what's inside
-  #- "echo $(npm config get prefix)/lib/node_modules"
-  #- "ls -la $(npm config get prefix)/lib/node_modules"
-
 
 # we're not installing starrynight globally, so we run the script from the local node_modules folder
 #script: "starrynight run-tests --framework nightwatch --env travis"
-
-
 
 script: "starrynight run-tests --framework nightwatch --env travis"

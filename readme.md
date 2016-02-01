@@ -2,6 +2,8 @@
 
 Hello World for the Clinical Meteor release track.
 
+[![Circle CI](https://circleci.com/gh/clinical-meteor/hello-healthcare/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/hello-healthcare/tree/master)
+
 ================================
 #### Installation
 

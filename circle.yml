@@ -46,3 +46,4 @@ test:
     #- sleep 60
   override:
     - starrynight run-tests --type validation --env travis
+    - starrynight run-tests --type package-verfication
