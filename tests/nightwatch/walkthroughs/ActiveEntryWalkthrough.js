@@ -158,7 +158,8 @@ module.exports = {
       .click("#logoutButton").pause(200)
       .verify.containsText("#usernameLink", "Sign In");
   },
-  "if anonymous user tries to log in with non-existing account, a message is shown": function (client) {
+  "if anonymous user tries to log in with non-existing account, a message is shown": function (
+    client) {
     client
       .url("http://localhost:3000/entrySignIn")
       .resizeWindow(1024, 768)
